@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvesh Thakur | Data Scientist & Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="pitch-lines"></div>
+        <div class="loader-content">
+            <div class="football-spinner">
+                <i class="fa-regular fa-futbol"></i>
+            </div>
+            <h2 class="loading-text">Loading Match Data<span class="dots">...</span></h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="logo">
+            <span class="neon-text">S.T</span>
+            <i class="fa-solid fa-chart-line logo-icon"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skill Matrix</a></li>
+            <li><a href="#timeline">Career</a></li>
+            <li><a href="#achievements">Hall of Fame</a></li>
+            <li><a href="#projects">Trophy Cabinet</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Match Pitch Background Layout -->
+    <div class="pitch-bg"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-content">
+                <p class="subtitle">Entering the Arena...</p>
+                <h1 class="glitch-title" data-text="SARVESH THAKUR">SARVESH THAKUR</h1>
+                <div class="typing-container">
+                    <span class="typing-text" id="typewriter"></span><span class="cursor">|</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary glow-effect"><i class="fa-solid fa-play"></i> View Campaigns</a>
+                    <a href="./savore.pdf" class="btn btn-secondary glass-btn" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="radar-scan"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <h2 class="section-title"><i class="fa-solid fa-user-astronaut"></i> Player Profile</h2>
+            <div class="glass-container about-grid">
+                <div class="about-text">
+                    <p>I am a passionate Computer Engineer and aspiring Data Scientist with a deep interest in solving real-world problems through technology and data-driven thinking.</p>
+                    <p>With a strong foundation in Python, Java, and backend development using Django, he enjoys building intelligent, user-focused applications that combine functionality with engaging design.</p>
+                    <p>His journey reflects continuous learning, adaptability, and a drive to innovate—whether it's creating immersive cultural platforms, smart automation systems, or interactive visual applications.</p>
+                    <p class="highlight-text"><i class="fa-regular fa-futbol"></i> His love for football reflects his mindset of strategy, discipline, and teamwork.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Play</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">99</span>
+                        <span class="stat-label">Pace (Learning)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h2 class="section-title"><i class="fa-solid fa-chart-radar"></i> Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="glass-container radar-container">
+                    <canvas id="skillsRadarChart"></canvas>
+                </div>
+                <div class="skills-list glass-container">
+                    <h3>Tactical Ratings</h3>
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="skill-info">
+                                <span>Python (Hackerrank ⭐⭐)</span>
+                            </div>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span>Java (Hackerrank ⭐⭐⭐)</span>
+                            </div>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span>Backend Dev (Django)</span>
+                            </div>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 100%;"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span>GUI Dev (Java + Python)</span>
+                            </div>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span>Frontend Development</span>
+                            </div>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 70%;"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span>Algorithms/DSA</span>
+                            </div>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 60%;"></div></div>
+                        </li>
+                    </ul>
+                    <div class="soft-skills mt-4">
+                        <h3>Playstyle Traits</h3>
+                        <div class="traits-badges">
+                            <span class="badge">Problem Solving</span>
+                            <span class="badge">Quick Learner</span>
+                            <span class="badge">Self Motivated</span>
+                            <span class="badge">Team Player</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline / Career Progression Section -->
+        <section id="timeline" class="section timeline-section">
+            <h2 class="section-title"><i class="fa-solid fa-route"></i> Career Progression</h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-container">
+                        <h3>2024</h3>
+                        <h4>Kickoff</h4>
+                        <p>Started Python programming line. Built foundation in algorithms and logic.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-container">
+                        <h3>Mid 2024</h3>
+                        <h4>Midfield Control</h4>
+                        <p>Learned Java & OOP concepts. Mastered structures and memory management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-container">
+                        <h3>Late 2024</h3>
+                        <h4>Building the Play</h4>
+                        <p>Built GUI Applications using Java Swing and Python Tkinter.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-container">
+                        <h3>2025</h3>
+                        <h4>Attacking Third</h4>
+                        <p>Transitioned into Backend Development with Django. Built real-world projects and systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section achievements-section">
+            <h2 class="section-title"><i class="fa-solid fa-medal"></i> Hall of Fame</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-container tilt-card">
+                    <i class="fa-solid fa-laptop-code achievement-icon" style="color: var(--neon-blue);"></i>
+                    <h3>Real-life Project Experience</h3>
+                    <p>Built robust solutions for real-world problems, including an SIH Project.</p>
+                </div>
+                <div class="achievement-card glass-container tilt-card">
+                    <i class="fa-brands fa-python achievement-icon" style="color: var(--neon-green);"></i>
+                    <h3>Python Certification</h3>
+                    <p>Completed official certification and demonstrated hands-on SQL database integration.</p>
+                </div>
+                <div class="achievement-card glass-container tilt-card">
+                    <i class="fa-solid fa-layer-group achievement-icon" style="color: #b92b27;"></i>
+                    <h3>Interactive Systems</h3>
+                    <p>Built multiple interactive systems successfully combining dynamic UI with complex logic.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Match Highlights -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title"><i class="fa-solid fa-trophy"></i> Trophy Cabinet</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card tilt-card" data-project="1">
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-image bg-planet"></div>
+                        <div class="card-info">
+                            <h3>Planet Weight Calculator</h3>
+                            <p class="tech-stack">Java Swing</p>
+                            <button class="btn-sm"><i class="fa-solid fa-expand"></i> Match Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card tilt-card" data-project="2">
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-image bg-monastery">
+                            <div class="card-overlay">
+                                <span class="featured-badge">MOTM Performance</span>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Monastery 360</h3>
+                            <p class="tech-stack">Web Architecture • Django</p>
+                            <button class="btn-sm"><i class="fa-solid fa-expand"></i> Match Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card tilt-card" data-project="3">
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-image bg-todo"></div>
+                        <div class="card-info">
+                            <h3>To-Do List</h3>
+                            <p class="tech-stack">Django</p>
+                            <button class="btn-sm"><i class="fa-solid fa-expand"></i> Match Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card tilt-card" data-project="4">
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-image bg-plant"></div>
+                        <div class="card-info">
+                            <h3>Plant Care System 🌱</h3>
+                            <p class="tech-stack">IoT • Sensors • Python</p>
+                            <button class="btn-sm"><i class="fa-solid fa-expand"></i> Match Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title"><i class="fa-solid fa-handshake"></i> Transfer Negotiations</h2>
+            <div class="glass-container contact-container">
+                <p>Ready to sign a new talent for your squad? Let's get in touch.</p>
+                <div class="social-links">
+                    <a href="mailto:sarvehs.tech@gmail.com" class="social-btn email-btn">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/sarvesh-thakur-86596436a/" target="_blank" class="social-btn in-btn">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/savoss-28" target="_blank" class="social-btn git-btn">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="./savore.pdf" target="_blank" rel="noopener noreferrer" class="social-btn dl-btn">
+                        <i class="fa-solid fa-file-pdf"></i> Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Project Modals Container -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-container glass-card">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content" id="modalContent">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Chart.js for Radar Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Vanilla Tilt for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="script.js?v=7"></script>
+</body>
+</html>
